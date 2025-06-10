@@ -3,11 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Anton&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <title>World Clock Project</title>
   </head>
   <body>
     <div class="app-container">
       <h1>World Clock</h1>
+
+      <select name="" id="">
+        <option value="">Select location</option>
+        <option value="">My location</option>
+        <option value="America/Nome">Nome</option>
+        <option value="America/Jamaica">Jamaica</option>
+        <option value="Europe/Zurich">Zurich</option>
+        <option value="Europe/Helsinki">Helsinki</option>
+        <option value="Asia/Calcutta">Calcutta</option>
+        <option value="Asia/Jerusalem">Jerusalem</option>
+        <option value="Asia/Tbilisi">Tbilisi</option>
+        <option value="Africa/Addis_Ababa">Addis Ababa</option>
+      </select>
       <div class="city-wrap">
         <div class="city">
           <div>
@@ -18,7 +38,7 @@
         </div>
         <div class="city">
           <div>
-            <h2 class="city-name">Katmandu</h2>
+            <h2 class="city-name">Kahtmandu</h2>
           </div>
           <div class="time">3:45:20 AM</div>
           <div class="date">Tuesday, June 10, 2025</div>
@@ -31,14 +51,25 @@
           <div class="date">Tuesday, June 10, 2025</div>
         </div>
       </div>
+      <footer>
+        This project was coded with 🧡 by
+        <strong
+          ><a href="https://github.com/AnaM186" target="_blank"
+            >Ana Moskalenko</a
+          ></strong
+        >,
+        <br />
+        open-sourced on
+        <a href="https://github.com/AnaM186/world-clock-project" target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://world-clock-project-main.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
     </div>
 
-    <footer>
-      This project was coded with 🧡 by
-      <strong><a href="">Ana Moskalenko</a></strong
-      >,
-      <br />
-      open-sourced on <a href="">GitHub</a> and hosted on <a href="">Netlify</a>
-    </footer>
+    <script src="src/script.js"></script>
   </body>
 </html>
