@@ -10,16 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Anton&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock Project</title>
   </head>
   <body>
     <div class="app-container">
       <h1>World Clock</h1>
 
-      <select name="" id="">
+      <select id="cities">
         <option value="">Select location</option>
-        <option value="">My location</option>
+        <option value="current">My location</option>
         <option value="America/Nome">Nome</option>
+        <option value="America/New_York">New York</option>
         <option value="America/Jamaica">Jamaica</option>
         <option value="Europe/Zurich">Zurich</option>
         <option value="Europe/Helsinki">Helsinki</option>
@@ -27,28 +30,29 @@
         <option value="Asia/Jerusalem">Jerusalem</option>
         <option value="Asia/Tbilisi">Tbilisi</option>
         <option value="Africa/Addis_Ababa">Addis Ababa</option>
+        <option value="Asia/Singapore">Singapore</option>
       </select>
       <div class="city-wrap">
         <div class="city">
           <div>
             <h2 class="city-name">Los Angeles</h2>
           </div>
-          <div class="time">3:45:20 AM</div>
-          <div class="date">Tuesday, June 10, 2025</div>
+          <div class="time" id="los-angeles-time"></div>
+          <div class="date" id="los-angeles-date"></div>
         </div>
         <div class="city">
           <div>
-            <h2 class="city-name">Kahtmandu</h2>
+            <h2 class="city-name">Sofia</h2>
           </div>
-          <div class="time">3:45:20 AM</div>
-          <div class="date">Tuesday, June 10, 2025</div>
+          <div class="time" id="sofia-time"></div>
+          <div class="date" id="sofia-date"></div>
         </div>
         <div class="city">
           <div>
             <h2 class="city-name">Jakarta</h2>
           </div>
-          <div class="time">3:45:20 AM</div>
-          <div class="date">Tuesday, June 10, 2025</div>
+          <div class="time" id="jakarta-time"></div>
+          <div class="date" id="jakarta-date"></div>
         </div>
       </div>
       <footer>
