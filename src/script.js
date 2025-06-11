@@ -66,7 +66,7 @@ function changeCity(event) {
     <div class="new-time">${time}</div>
   </div>
   <div  class="back-link">
-  <a href="index.html">Back to all cities</a>
+  <a href="/">Back to all cities</a>
   </div>
 </div>`;
   }
